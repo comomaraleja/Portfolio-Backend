@@ -24,7 +24,7 @@ public class PersonaController {
     //Decirle al Front qué mostrar
     
     //EL USUARIO SÓLO VA A PODER VER
-    @GetMapping("personas/traer") //Es para que pase de la base de datos al Front
+    @GetMapping("/personas/traer") //Es para que pase de la base de datos al Front
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
     }
@@ -67,7 +67,7 @@ public class PersonaController {
                                 
     }
     
-    @GetMapping("personas/traer/perfil")
+    @GetMapping("/personas/traer/perfil")
     public Persona findPersona(){
     return ipersonaService.findPersona((long) 1);
     }
