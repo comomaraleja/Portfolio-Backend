@@ -46,19 +46,28 @@ public class Persona implements Serializable {
         private String descripcion;
         @Size(min=1, max=500, message="No cumple con la longitud")
         private String img;
-    /*
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
-        public List<Educacion> educacionList;
-    
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
-        private List<Experiencia> experienciaList;
         
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
-        private List<Skills> skillsList;
-      
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "id")
-        private List<Proyectos> proyectosList;
-*/
+        
+       /*
+        @OneToMany(mappedBy = "persona", orphanRemoval = true, cascade = CascadeType.ALL)
+        private List<Educacion> educationList = new ArrayList<>();
+        
+        
+        @OneToMany(mappedBy = "persona", orphanRemoval = true, cascade = CascadeType.ALL)
+        private List<Experiencia> experienciaList = new ArrayList<>();
+         
+         
+        @OneToMany(mappedBy = "persona", orphanRemoval = true, cascade = CascadeType.ALL)
+        private List<Proyectos> proyectosList = new ArrayList<>();
+          
+         
+        @OneToMany(mappedBy = "persona", orphanRemoval = true, cascade = CascadeType.ALL)
+        private List<Skills> skillsList = new ArrayList<>();*/
+
+          
+          
+          
+          
     public Persona() {
     }
 
