@@ -1,5 +1,5 @@
 
-package com.portfolio.mgb.controller;
+/*package com.portfolio.mgb.controller;
 
 import java.time.Instant;
 import org.springframework.http.HttpStatus;
@@ -17,3 +17,4 @@ public class TimeController {
         return Instant.now().toString();
     }
 }
+*/
