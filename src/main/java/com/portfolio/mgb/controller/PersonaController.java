@@ -51,6 +51,8 @@ public class PersonaController {
     public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre, 
                                @RequestParam("apellido") String nuevoApellido, 
+                               @RequestParam("titulo") String nuevoTitulo,
+                               @RequestParam("descripcion") String nuevaDescripcion,
                                @RequestParam("img") String nuevoImg
                                
     
@@ -60,6 +62,8 @@ public class PersonaController {
         
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
+        persona.setTitulo(nuevoTitulo);
+        persona.setDescripcion(nuevaDescripcion);
         persona.setImg(nuevoImg);
         
       
