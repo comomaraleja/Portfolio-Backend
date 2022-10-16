@@ -31,7 +31,7 @@ public class PersonaController {
         return ipersonaService.getPersona();
     }
     
-    @PreAuthorize("hasRole('ADMIN')") //LÍNEA QUE INDICA QUE SOLO EL ADMINISTRADOR PUEDE HACER EL CRUD
+    /*@PreAuthorize("hasRole('ADMIN')")*/ //LÍNEA QUE INDICA QUE SOLO EL ADMINISTRADOR PUEDE HACER EL CRUD
     @PostMapping("/personas/crear") //es el caso inverso: desde el front se guarda en la base de datos
     public String createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona); 
